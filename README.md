@@ -290,11 +290,11 @@ function research() {
 }
 ```
 
-- [ ] Complétez la fonction, vérifiez notamment qu'il y a 5 projets commençant par la lettre `P`, mais un seul commençant par les lettres `PO`.
+- [x] Complétez la fonction, vérifiez notamment qu'il y a 5 projets commençant par la lettre `P`, mais un seul commençant par les lettres `PO`.
 
-- [ ] Ajoutez un input au dessus du tableau et faites en sorte que à chaque fois que l'utilisateur tape une lettre, on lance la fonction de recherche et on met à jour la vue.
+- [x] Ajoutez un input au dessus du tableau et faites en sorte que à chaque fois que l'utilisateur tape une lettre, on lance la fonction de recherche et on met à jour la vue.
 
-- [ ] Les noms des projets étant en majuscule, convertissez la saisie de l'utilisateur avant de lancer votre fonction de recherche.
+- [x] Les noms des projets étant en majuscule, convertissez la saisie de l'utilisateur avant de lancer votre fonction de recherche.
 
 Voici un exemple d'interface auquelle vous [pourriez parvenir](http://recordit.co/nFSyim9OGw)
 

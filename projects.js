@@ -190,18 +190,37 @@ let projects = [
     }
 ]
 
-function showProjectList(){
-    for (let i = 0; i < projects.length; i++) {
+//affiche la liste des projets
+function showProjectList(tab) {
+    for (let i = 0; i < tab.length; i++) {
         $("tbody").append("<tr id='row" + i + "'></tr>");
-        for (let j = 0; j <1; j++) {
-            $("#row" + i).append("<td class='picture" + i + "'>"+ projects[i].picture+"</td>");
-            $("#row" + i).append("<td class='name" + i + "'>"+ projects[i].name+"</td>");
-            $("#row" + i).append("<td class='active" + i + "'>"+ projects[i].isActive+"</td>");
-            $("#row" + i).append("<td class='creation" + i + "'>"+ projects[i].creation+"</td>");
+        $("#row" + i).append("<td class='picture" + i + "'>" + tab[i].picture + "</td>");
+        $("#row" + i).append("<td class='name" + i + "'>" + tab[i].name + "</td>");
+        $("#row" + i).append("<td class='active" + i + "'>" + tab[i].isActive + "</td>");
+        $("#row" + i).append("<td class='creation" + i + "'>" + tab[i].creation + "</td>");
+    }
+
+}
+
+//recherche la sélection de projets - nom inséré dans input
+function research(tab, element) {
+    let result = [];
+    for (let i = 0; i < tab.length; i++) {
+        if (tab[i].name.startsWith(element)) {
+            result.push(tab[i])
         }
     }
+    return result;
 }
 
 $(document).ready(function () {
-    showProjectList();
+    showProjectList(projects);
+    $("#mySearch").keyup(function () {
+        let inputValue = $(this).val().toUpperCase();
+        let newTabProjects = research(projects, inputValue);
+        $("tbody").empty();
+        showProjectList(newTabProjects);
+    });
+
+
 });

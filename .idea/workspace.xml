@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f82d0d2e-8ebc-45cd-bbd0-3b2d80574224" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/projects.js" afterPath="$PROJECT_DIR$/projects.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,109 +17,99 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.44309393">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="projects.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/projects.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="320">
-                  <caret line="206" column="3" lean-forward="true" selection-start-line="206" selection-start-column="3" selection-end-line="206" selection-end-column="3" />
-                  <folding>
-                    <element signature="e#15#6652#0" expanded="false" />
-                    <element signature="e#21#261#0" expanded="false" />
-                    <element signature="e#267#506#0" expanded="false" />
-                    <element signature="e#512#750#0" expanded="false" />
-                    <element signature="e#756#996#0" expanded="false" />
-                    <element signature="e#1002#1240#0" expanded="false" />
-                    <element signature="e#1246#1488#0" expanded="false" />
-                    <element signature="e#1494#1733#0" expanded="false" />
-                    <element signature="e#1739#1977#0" expanded="false" />
-                    <element signature="e#1983#2225#0" expanded="false" />
-                    <element signature="e#2231#2472#0" expanded="false" />
-                    <element signature="e#2478#2717#0" expanded="false" />
-                    <element signature="e#2723#2966#0" expanded="false" />
-                    <element signature="e#2972#3213#0" expanded="false" />
-                    <element signature="e#3219#3460#0" expanded="false" />
-                    <element signature="e#3466#3704#0" expanded="false" />
-                    <element signature="e#3710#3948#0" expanded="false" />
-                    <element signature="e#3954#4191#0" expanded="false" />
-                    <element signature="e#4197#4438#0" expanded="false" />
-                    <element signature="e#4444#4684#0" expanded="false" />
-                    <element signature="e#4690#4931#0" expanded="false" />
-                    <element signature="e#4937#5174#0" expanded="false" />
-                    <element signature="e#5180#5418#0" expanded="false" />
-                    <element signature="e#5424#5665#0" expanded="false" />
-                    <element signature="e#5671#5908#0" expanded="false" />
-                    <element signature="e#5914#6153#0" expanded="false" />
-                    <element signature="e#6159#6402#0" expanded="false" />
-                    <element signature="e#6408#6650#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="147">
-                    <caret line="268" column="4" lean-forward="false" selection-start-line="268" selection-start-column="4" selection-end-line="268" selection-end-column="4" />
-                    <folding>
-                      <marker date="1531741300427" expanded="false" signature="2742:8731" ph="[...]" />
-                      <marker date="1531741300427" expanded="true" signature="2746:2964" ph="{&quot;name&quot;: &quot;ZENTURY&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="2968:3185" ph="{&quot;name&quot;: &quot;POLARAX&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="3189:3405" ph="{&quot;name&quot;: &quot;BICOL&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="3409:3627" ph="{&quot;name&quot;: &quot;CYTREX&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="3631:3847" ph="{&quot;name&quot;: &quot;PLAYCE&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="3851:4071" ph="{&quot;name&quot;: &quot;NETROPIC&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="4075:4292" ph="{&quot;name&quot;: &quot;UNISURE&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="4296:4512" ph="{&quot;name&quot;: &quot;CALCU&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="4516:4736" ph="{&quot;name&quot;: &quot;QUADEEBO&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="4740:4959" ph="{&quot;name&quot;: &quot;PROXSOFT&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="4963:5180" ph="{&quot;name&quot;: &quot;VERBUS&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="5184:5405" ph="{&quot;name&quot;: &quot;FURNITECH&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="5409:5628" ph="{&quot;name&quot;: &quot;ZENTHALL&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="5632:5851" ph="{&quot;name&quot;: &quot;BEADZZA&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="5855:6071" ph="{&quot;name&quot;: &quot;ENERSOL&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="6075:6291" ph="{&quot;name&quot;: &quot;ORBIN&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="6295:6510" ph="{&quot;name&quot;: &quot;ANDRYX&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="6514:6733" ph="{&quot;name&quot;: &quot;MARKETOID&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="6737:6955" ph="{&quot;name&quot;: &quot;COMBOGENE&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="6959:7178" ph="{&quot;name&quot;: &quot;PASTURIA&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="7182:7397" ph="{&quot;name&quot;: &quot;ECRAZE&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="7401:7617" ph="{&quot;name&quot;: &quot;KEEG&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="7621:7840" ph="{&quot;name&quot;: &quot;SHOPABOUT&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="7844:8059" ph="{&quot;name&quot;: &quot;ZILLAR&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="8063:8280" ph="{&quot;name&quot;: &quot;EQUITAX&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="8284:8505" ph="{&quot;name&quot;: &quot;DIGIPRINT&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="8509:8729" ph="{&quot;name&quot;: &quot;PUSHCART&quot;...}" />
-                      <marker date="1531741300427" expanded="true" signature="9728:9732" ph="{...}" />
-                      <marker date="1531741300427" expanded="true" signature="13126:13334" ph="{...}" />
-                    </folding>
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="647">
+                <caret line="296" column="4" lean-forward="false" selection-start-line="296" selection-start-column="4" selection-end-line="296" selection-end-column="4" />
+                <folding>
+                  <marker date="1531751737092" expanded="false" signature="2742:8731" ph="[...]" />
+                  <marker date="1531751737092" expanded="true" signature="2746:2964" ph="{&quot;name&quot;: &quot;ZENTURY&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="2968:3185" ph="{&quot;name&quot;: &quot;POLARAX&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="3189:3405" ph="{&quot;name&quot;: &quot;BICOL&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="3409:3627" ph="{&quot;name&quot;: &quot;CYTREX&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="3631:3847" ph="{&quot;name&quot;: &quot;PLAYCE&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="3851:4071" ph="{&quot;name&quot;: &quot;NETROPIC&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="4075:4292" ph="{&quot;name&quot;: &quot;UNISURE&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="4296:4512" ph="{&quot;name&quot;: &quot;CALCU&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="4516:4736" ph="{&quot;name&quot;: &quot;QUADEEBO&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="4740:4959" ph="{&quot;name&quot;: &quot;PROXSOFT&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="4963:5180" ph="{&quot;name&quot;: &quot;VERBUS&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="5184:5405" ph="{&quot;name&quot;: &quot;FURNITECH&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="5409:5628" ph="{&quot;name&quot;: &quot;ZENTHALL&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="5632:5851" ph="{&quot;name&quot;: &quot;BEADZZA&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="5855:6071" ph="{&quot;name&quot;: &quot;ENERSOL&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="6075:6291" ph="{&quot;name&quot;: &quot;ORBIN&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="6295:6510" ph="{&quot;name&quot;: &quot;ANDRYX&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="6514:6733" ph="{&quot;name&quot;: &quot;MARKETOID&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="6737:6955" ph="{&quot;name&quot;: &quot;COMBOGENE&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="6959:7178" ph="{&quot;name&quot;: &quot;PASTURIA&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="7182:7397" ph="{&quot;name&quot;: &quot;ECRAZE&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="7401:7617" ph="{&quot;name&quot;: &quot;KEEG&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="7621:7840" ph="{&quot;name&quot;: &quot;SHOPABOUT&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="7844:8059" ph="{&quot;name&quot;: &quot;ZILLAR&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="8063:8280" ph="{&quot;name&quot;: &quot;EQUITAX&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="8284:8505" ph="{&quot;name&quot;: &quot;DIGIPRINT&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="8509:8729" ph="{&quot;name&quot;: &quot;PUSHCART&quot;...}" />
+                  <marker date="1531751737092" expanded="true" signature="9728:9732" ph="{...}" />
+                  <marker date="1531751737092" expanded="true" signature="13126:13334" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="projects.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="206" column="20" lean-forward="true" selection-start-line="206" selection-start-column="20" selection-end-line="206" selection-end-column="20" />
+              <folding>
+                <element signature="e#267#506#0" expanded="false" />
+                <element signature="e#512#750#0" expanded="false" />
+                <element signature="e#756#996#0" expanded="false" />
+                <element signature="e#1002#1240#0" expanded="false" />
+                <element signature="e#1246#1488#0" expanded="false" />
+                <element signature="e#1494#1733#0" expanded="false" />
+                <element signature="e#1739#1977#0" expanded="false" />
+                <element signature="e#1983#2225#0" expanded="false" />
+                <element signature="e#2231#2472#0" expanded="false" />
+                <element signature="e#2478#2717#0" expanded="false" />
+                <element signature="e#2723#2966#0" expanded="false" />
+                <element signature="e#2972#3213#0" expanded="false" />
+                <element signature="e#3219#3460#0" expanded="false" />
+                <element signature="e#3466#3704#0" expanded="false" />
+                <element signature="e#3710#3948#0" expanded="false" />
+                <element signature="e#3954#4191#0" expanded="false" />
+                <element signature="e#4197#4438#0" expanded="false" />
+                <element signature="e#4444#4684#0" expanded="false" />
+                <element signature="e#4690#4931#0" expanded="false" />
+                <element signature="e#4937#5174#0" expanded="false" />
+                <element signature="e#5180#5418#0" expanded="false" />
+                <element signature="e#5424#5665#0" expanded="false" />
+                <element signature="e#5671#5908#0" expanded="false" />
+                <element signature="e#5914#6153#0" expanded="false" />
+                <element signature="e#6159#6402#0" expanded="false" />
+                <element signature="e#6408#6650#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -220,18 +210,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531727391943</updated>
-      <workItem from="1531727393203" duration="9290000" />
+      <workItem from="1531727393203" duration="18684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9290000" />
+    <option name="totallyTimeSpent" value="18684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -263,14 +253,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/vue-projects-list.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -286,13 +268,19 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="206" column="3" lean-forward="true" selection-start-line="206" selection-start-column="3" selection-end-line="206" selection-end-column="3" />
+        <state relative-caret-position="629">
+          <caret line="206" column="20" lean-forward="true" selection-start-line="206" selection-start-column="20" selection-end-line="206" selection-end-column="20" />
           <folding>
-            <element signature="e#15#6652#0" expanded="false" />
-            <element signature="e#21#261#0" expanded="false" />
             <element signature="e#267#506#0" expanded="false" />
             <element signature="e#512#750#0" expanded="false" />
             <element signature="e#756#996#0" expanded="false" />
@@ -326,39 +314,39 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="147">
-            <caret line="268" column="4" lean-forward="false" selection-start-line="268" selection-start-column="4" selection-end-line="268" selection-end-column="4" />
+          <first_editor relative-caret-position="647">
+            <caret line="296" column="4" lean-forward="false" selection-start-line="296" selection-start-column="4" selection-end-line="296" selection-end-column="4" />
             <folding>
-              <marker date="1531741300427" expanded="false" signature="2742:8731" ph="[...]" />
-              <marker date="1531741300427" expanded="true" signature="2746:2964" ph="{&quot;name&quot;: &quot;ZENTURY&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="2968:3185" ph="{&quot;name&quot;: &quot;POLARAX&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="3189:3405" ph="{&quot;name&quot;: &quot;BICOL&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="3409:3627" ph="{&quot;name&quot;: &quot;CYTREX&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="3631:3847" ph="{&quot;name&quot;: &quot;PLAYCE&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="3851:4071" ph="{&quot;name&quot;: &quot;NETROPIC&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="4075:4292" ph="{&quot;name&quot;: &quot;UNISURE&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="4296:4512" ph="{&quot;name&quot;: &quot;CALCU&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="4516:4736" ph="{&quot;name&quot;: &quot;QUADEEBO&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="4740:4959" ph="{&quot;name&quot;: &quot;PROXSOFT&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="4963:5180" ph="{&quot;name&quot;: &quot;VERBUS&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="5184:5405" ph="{&quot;name&quot;: &quot;FURNITECH&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="5409:5628" ph="{&quot;name&quot;: &quot;ZENTHALL&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="5632:5851" ph="{&quot;name&quot;: &quot;BEADZZA&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="5855:6071" ph="{&quot;name&quot;: &quot;ENERSOL&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="6075:6291" ph="{&quot;name&quot;: &quot;ORBIN&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="6295:6510" ph="{&quot;name&quot;: &quot;ANDRYX&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="6514:6733" ph="{&quot;name&quot;: &quot;MARKETOID&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="6737:6955" ph="{&quot;name&quot;: &quot;COMBOGENE&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="6959:7178" ph="{&quot;name&quot;: &quot;PASTURIA&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="7182:7397" ph="{&quot;name&quot;: &quot;ECRAZE&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="7401:7617" ph="{&quot;name&quot;: &quot;KEEG&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="7621:7840" ph="{&quot;name&quot;: &quot;SHOPABOUT&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="7844:8059" ph="{&quot;name&quot;: &quot;ZILLAR&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="8063:8280" ph="{&quot;name&quot;: &quot;EQUITAX&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="8284:8505" ph="{&quot;name&quot;: &quot;DIGIPRINT&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="8509:8729" ph="{&quot;name&quot;: &quot;PUSHCART&quot;...}" />
-              <marker date="1531741300427" expanded="true" signature="9728:9732" ph="{...}" />
-              <marker date="1531741300427" expanded="true" signature="13126:13334" ph="{...}" />
+              <marker date="1531751737092" expanded="false" signature="2742:8731" ph="[...]" />
+              <marker date="1531751737092" expanded="true" signature="2746:2964" ph="{&quot;name&quot;: &quot;ZENTURY&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="2968:3185" ph="{&quot;name&quot;: &quot;POLARAX&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="3189:3405" ph="{&quot;name&quot;: &quot;BICOL&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="3409:3627" ph="{&quot;name&quot;: &quot;CYTREX&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="3631:3847" ph="{&quot;name&quot;: &quot;PLAYCE&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="3851:4071" ph="{&quot;name&quot;: &quot;NETROPIC&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="4075:4292" ph="{&quot;name&quot;: &quot;UNISURE&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="4296:4512" ph="{&quot;name&quot;: &quot;CALCU&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="4516:4736" ph="{&quot;name&quot;: &quot;QUADEEBO&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="4740:4959" ph="{&quot;name&quot;: &quot;PROXSOFT&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="4963:5180" ph="{&quot;name&quot;: &quot;VERBUS&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="5184:5405" ph="{&quot;name&quot;: &quot;FURNITECH&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="5409:5628" ph="{&quot;name&quot;: &quot;ZENTHALL&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="5632:5851" ph="{&quot;name&quot;: &quot;BEADZZA&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="5855:6071" ph="{&quot;name&quot;: &quot;ENERSOL&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="6075:6291" ph="{&quot;name&quot;: &quot;ORBIN&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="6295:6510" ph="{&quot;name&quot;: &quot;ANDRYX&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="6514:6733" ph="{&quot;name&quot;: &quot;MARKETOID&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="6737:6955" ph="{&quot;name&quot;: &quot;COMBOGENE&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="6959:7178" ph="{&quot;name&quot;: &quot;PASTURIA&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="7182:7397" ph="{&quot;name&quot;: &quot;ECRAZE&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="7401:7617" ph="{&quot;name&quot;: &quot;KEEG&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="7621:7840" ph="{&quot;name&quot;: &quot;SHOPABOUT&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="7844:8059" ph="{&quot;name&quot;: &quot;ZILLAR&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="8063:8280" ph="{&quot;name&quot;: &quot;EQUITAX&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="8284:8505" ph="{&quot;name&quot;: &quot;DIGIPRINT&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="8509:8729" ph="{&quot;name&quot;: &quot;PUSHCART&quot;...}" />
+              <marker date="1531751737092" expanded="true" signature="9728:9732" ph="{...}" />
+              <marker date="1531751737092" expanded="true" signature="13126:13334" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
