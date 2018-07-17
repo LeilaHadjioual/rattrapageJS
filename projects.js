@@ -190,6 +190,9 @@ let projects = [
     }
 ]
 
+//création d'un nouveau tableau qui stocke le tableau initial afin de ne pas le modifier - newTab sera appelé dans chaque fonction à la place de projects
+let newTabProjects = convert(projects);
+
 //affiche la liste des projets
 function showProjectList(tab) {
     for (let i = 0; i < tab.length; i++) {
@@ -199,7 +202,6 @@ function showProjectList(tab) {
         $("#row" + i).append("<td class='active" + i + "'>" + tab[i].isActive + "</td>");
         $("#row" + i).append("<td class='creation" + i + "'>" + tab[i].creation + "</td>");
     }
-
 }
 
 //recherche la sélection de projets - nom inséré dans input
@@ -213,14 +215,77 @@ function research(tab, element) {
     return result;
 }
 
+//convertit la date de création (qui est un string) en format date
+function convert(tab) {
+    let dateTab = tab;
+    for (let i = 0; i < tab.length; i++) {
+        let date = new Date(tab[i].creation);
+        tab[i].creation = date;
+    }
+    return dateTab;
+}
+
+//tri le tableau par date de création - tri croissant
+function sortByDate(tab) {
+    for (let i = 0; i < tab.length; i++) {
+        tab.sort(function (date1, date2) {
+            if (date1.creation > date2.creation) {
+                return 1;
+            } else if (date1.creation < date2.creation) {
+                return -1;
+            } else if (date1.creation === date2.creation) {
+                return 0;
+            }
+        })
+    }
+    return tab;
+}
+
+//tri le tableau par ordre alphabetique (nom de projet)
+function sortByName(tab) {
+    for (let i = 0; i < tab.length; i++) {
+        tab.sort(function (name1, name2) {
+            if (name1.name > name2.name) {
+                return 1;
+            } else if (name1.name < name2.name) {
+                return -1;
+            } else if (name1.name === name2.name) {
+                return 0;
+            }
+        })
+    }
+    return tab;
+}
+
+
 $(document).ready(function () {
-    showProjectList(projects);
-    $("#mySearch").keyup(function () {
+    showProjectList(newTabProjects);
+    $('#mySearch').keyup(function () {
         let inputValue = $(this).val().toUpperCase();
-        let newTabProjects = research(projects, inputValue);
+        let newTab = research(newTabProjects, inputValue);
         $("tbody").empty();
+        showProjectList(newTab);
+    })
+    $('#dateUp').on('click', function () {
+        $("tbody").empty();
+        sortByDate(newTabProjects);
+        showProjectList(newTabProjects);
+    });
+    $('#dateDown').on('click', function () {
+        $("tbody").empty();
+        sortByDate(newTabProjects).reverse();
         showProjectList(newTabProjects);
     });
 
+    $('#up').on('click', function () {
+        $("tbody").empty();
+        sortByName(newTabProjects);
+        showProjectList(newTabProjects);
+    });
+    $('#down').on('click', function () {
+        $("tbody").empty();
+        sortByName(newTabProjects).reverse();
+        showProjectList(newTabProjects);
+    });
 
 });
