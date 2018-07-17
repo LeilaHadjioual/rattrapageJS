@@ -2,31 +2,90 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Gestion projets</title>
+    <title>Projet JS</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="projects.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
+<!--navbar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <form class="form-inline">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+            </div>
+            <!--champ de recherche-->
+            <input type="text" class="form-control" id="mySearch" name="q" placeholder="Rechercher…" size="30">
+        </div>
+    </form>
+</nav>
+<br>
+
 <div class="container">
-    <h2>Liste des projets </h2>
+    <h2>LISTE DES PROJETS</h2>
     <div>
-        <input type="text" id="mySearch" name="q" placeholder="Rechercher…" size="30">
+        <!-- Button Créer un nouveau projet- affiche modal-->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Créer un nouveau projet
+        </button>
     </div>
+    <br>
+    <!--tableau liste projets-->
     <table class="table table-hover">
         <thead class="thead-light">
         <tr>
             <th>Image</th>
             <th>Nom <i id="up" class="fas fa-caret-up"></i> <i id="down" class="fas fa-caret-down"></i></th>
-            <th>Projet actif ? </th>
+            <th>Projet actif ?</th>
             <th>Date de création <i id="dateUp" class="fas fa-caret-up"></i> <i id="dateDown" class="fas fa-caret-down"></i></th>
         </tr>
         </thead>
         <tbody>
         </tbody>
     </table>
+</div>
+
+<!-- Modal création nouveau projet-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nouveau projet</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="formulaire">
+                    <div class="form-group">
+                        <label for="projectName" class="col-form-label">Nom du projet :</label>
+                        <input type="text" class="form-control" id="projectName">
+                    </div>
+                    <div class="form-group">
+                        <label for="creationDate" class="col-form-label">Date de création :</label>
+                        <input type="date" class="form-control" id="creationDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="picture" class="col-form-label">Image du projet :</label>
+                        <input type="text" class="form-control" id="picture">
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked" checked>
+                        <label class="custom-control-label" for="defaultUnchecked"> Projet actif ?</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                <button id="save" type="button" class="btn btn-primary" data-dismiss="modal">Enregistrer</button>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

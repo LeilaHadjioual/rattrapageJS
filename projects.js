@@ -256,6 +256,13 @@ function sortByName(tab) {
     }
     return tab;
 }
+function createNewProject(){
+    let nom = $("#projectName").val();
+    let date = $("#creationDate").val();
+    let picture = $("#picture").val();
+    let box = $("#defaultUnchecked").prop("checked");
+    return {"name": nom, "picture":picture, "creation" : date, "isActive":box}
+}
 
 
 $(document).ready(function () {
@@ -287,5 +294,15 @@ $(document).ready(function () {
         sortByName(newTabProjects).reverse();
         showProjectList(newTabProjects);
     });
+
+    $("#save").click(function(){
+        let newProject = createNewProject();
+        newTabProjects.push(newProject);
+        $("tbody").empty();
+        showProjectList(newTabProjects);
+        $('#formulaire')[0].reset();
+    })
+
+
 
 });
