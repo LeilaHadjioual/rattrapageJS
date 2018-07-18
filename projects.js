@@ -196,10 +196,16 @@ let newTabProjects = convert(projects);
 //affiche la liste des projets
 function showProjectList(tab) {
     for (let i = 0; i < tab.length; i++) {
+        let isactive = tab[i].isActive;
+        if (isactive) {
+            isactive = "oui";
+        } else {
+            isactive = "non";
+        }
         $("tbody").append("<tr id='row" + i + "'></tr>");
-        $("#row" + i).append("<td class='picture" + i + "'>" + tab[i].picture + "</td>");
+        $("#row" + i).append("<td class='picture" + i + "'>" + "<img src =" + tab[i].picture + "></td>");
         $("#row" + i).append("<td class='name" + i + "'>" + tab[i].name + "</td>");
-        $("#row" + i).append("<td class='active" + i + "'>" + tab[i].isActive + "</td>");
+        $("#row" + i).append("<td class='active" + i + "'>" + isactive + "</td>");
         $("#row" + i).append("<td class='creation" + i + "'>" + tab[i].creation + "</td>");
     }
 }
@@ -226,22 +232,31 @@ function convert(tab) {
 }
 
 //tri le tableau par date de création - tri croissant
+// function sortByDate(tab) {
+//     for (let i = 0; i < tab.length; i++) {
+//         tab.sort(function (date1, date2) {
+//             if (date1.creation > date2.creation) {
+//                 return 1;
+//             } else if (date1.creation < date2.creation) {
+//                 return -1;
+//             } else if (date1.creation === date2.creation) {
+//                 return 0;
+//             }
+//
+//         })
+//     }
+//     return tab;
+// }
+
+// 2ème façon de trier les dates
 function sortByDate(tab) {
-    for (let i = 0; i < tab.length; i++) {
-        tab.sort(function (date1, date2) {
-            if (date1.creation > date2.creation) {
-                return 1;
-            } else if (date1.creation < date2.creation) {
-                return -1;
-            } else if (date1.creation === date2.creation) {
-                return 0;
-            }
-        })
-    }
+    tab.sort(function (date1, date2) {
+        return date1.creation - date2.creation;
+    })
     return tab;
 }
 
-//tri le tableau par ordre alphabetique (nom de projet)
+// tri le tableau par ordre alphabetique (nom de projet)
 function sortByName(tab) {
     for (let i = 0; i < tab.length; i++) {
         tab.sort(function (name1, name2) {
@@ -256,53 +271,82 @@ function sortByName(tab) {
     }
     return tab;
 }
-function createNewProject(){
-    let nom = $("#projectName").val();
-    let date = $("#creationDate").val();
+
+
+//créer un nouveau projet via modale
+function createNewProject() {
+    let name = $("#projectName").val();
+    let date = new Date($("#creationDate").val());
     let picture = $("#picture").val();
-    let box = $("#defaultUnchecked").prop("checked");
-    return {"name": nom, "picture":picture, "creation" : date, "isActive":box}
+    let box = $("#checkInput").prop("checked");
+    return {"name": name, "picture": picture, "creation": date, "isActive": box}
 }
 
 
 $(document).ready(function () {
+    //affiche la liste des projets
     showProjectList(newTabProjects);
+    //recherche d'un projet par nom
     $('#mySearch').keyup(function () {
         let inputValue = $(this).val().toUpperCase();
         let newTab = research(newTabProjects, inputValue);
         $("tbody").empty();
         showProjectList(newTab);
-    })
+    });
+
+    //tri par date croissante
     $('#dateUp').on('click', function () {
         $("tbody").empty();
         sortByDate(newTabProjects);
         showProjectList(newTabProjects);
     });
+
+    //tri par date décroissante
     $('#dateDown').on('click', function () {
         $("tbody").empty();
         sortByDate(newTabProjects).reverse();
         showProjectList(newTabProjects);
     });
 
+    // Actions de tri sur les noms en un seul bouton
+    // let bool = true;
+    // $('#up').click(function () {
+    //     if (bool) {
+    //         $("tbody").empty();
+    //         let tabSortedUp = sortByName(newTabProjects);// Tri de A à Z
+    //         showProjectList(tabSortedUp);
+    //     } else {
+    //         $("tbody").empty();
+    //         let tabSortedDown = sortByName(newTabProjects).reverse();// Tri de Z à A
+    //         showProjectList(tabSortedDown);
+    //     }
+    //     bool = !bool;// remplace le booléen par son contraire
+    // });
+
+    // tri par ordre alpha croissant
     $('#up').on('click', function () {
         $("tbody").empty();
         sortByName(newTabProjects);
         showProjectList(newTabProjects);
     });
+
+    //tri par ordre alpha décroissant
     $('#down').on('click', function () {
         $("tbody").empty();
         sortByName(newTabProjects).reverse();
         showProjectList(newTabProjects);
     });
 
-    $("#save").click(function(){
+    //enregistre un nouveau projet
+    $("#save").click(function () {
         let newProject = createNewProject();
-        newTabProjects.push(newProject);
         $("tbody").empty();
+        newTabProjects.push(newProject);
         showProjectList(newTabProjects);
+        //met le formulaire à 0
         $('#formulaire')[0].reset();
+        // document.getElementById("formulaire").reset(); --> reset sans jquery
     })
-
 
 
 });
